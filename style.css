@@ -1,0 +1,268 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body, html {
+  background-color: #424242 ;
+  color:rgb(221, 213, 212);
+  font-family: "ubuntu", sans-serif;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  overflow-x: hidden;
+}
+
+.nav{
+    background-color: #212121;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0.9rem;
+    width: 100%;
+    color:rgb(221, 213, 212) ;
+    position:fixed;
+    top: 0;
+    left: 0; 
+    z-index: 1000;
+}
+
+.home {
+  height: 75vh;
+  margin-bottom: 3rem;
+}
+
+@keyframes escrevendo {
+  from {
+    width: 0;
+  }
+}
+
+@keyframes piscando {
+  50%{
+    border-color: transparent;
+  }
+}
+
+@keyframes flutuar {
+  50% {
+    transform: translateY(-10%);
+  }
+}
+.h1Home {
+  color: rgb(221, 213, 212);
+  border-right: 4px solid;
+  white-space: nowrap;
+  overflow: hidden;
+  width: 35ch;
+  animation: escrevendo 2s steps(35), piscando 0.8s infinite alternate;
+}
+
+.homeContainer {
+  display: flex;
+  flex-direction: row;
+  margin-top: 10rem;
+  gap: 10rem;
+  align-items: center;
+}
+
+.homeTexto {
+  display: block;
+  flex-direction: column;
+  justify-content: start;
+  align-items: center;
+  margin-left: 100px;
+  width: 50%;
+  font-family: "ubunto", sans-serif;
+}
+
+.homeImg {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 150px;
+  
+}
+
+.devImg {
+  display: flex;
+  width: 500px;
+}
+
+.btnHome {
+  display: flex;
+  color: rgb(221, 213, 212) ;
+  background-color: #212121;
+  padding: 10px;
+  border: none;
+  border-radius: 15px;
+  margin-top: 20px;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+.aHome {
+  text-decoration: none;
+}
+
+.setaDiv {
+  display: flex;
+  justify-content: center;
+  
+}
+
+.seta {
+  width: 100px;
+  animation: flutuar 1.5s infinite ease-in-out;
+  
+}
+
+.navegacao{
+    display: flex;
+    justify-content: flex-end; 
+    gap: 2rem;
+    padding: 1rem;
+    list-style-type: none;
+    width: 100%;
+}
+
+.navBar{
+  cursor: pointer;
+  list-style: none;
+  text-decoration: none;
+  color: rgb(221, 213, 212);
+}
+
+.aboutContainer{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 5rem;
+  gap: 5rem;
+  width: 100%;
+  background-color: #212121;
+}
+
+.titleAbout{
+  margin-bottom: 30px;
+}
+
+.aboutTexto{
+  display: flex;
+  flex-direction: column;
+  width: 45%;
+}
+
+.aboutImg {
+ display: flex;
+ width: 40%;
+ margin-left: 200px;
+}
+
+
+
+.imgAbout {
+  width: 300px;
+  height: 300px;
+  border-radius: 150px;
+  border: 5px solid #212121;
+}
+
+.about {
+  margin-bottom: 3rem;
+}
+
+.skillsContainer{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 3rem;
+  gap: 3rem;
+}
+
+.skillsImg{
+  display: flex;
+  justify-content: space-between;
+  gap: 3rem;
+  padding: 3rem;
+}
+
+.html, .css, .js {
+  height: 100%;
+  width: 200px;
+}
+
+.projetosContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #212121;
+  width: 100%;
+  
+}
+
+.projetosContainer > h2 {
+  margin:1rem 0 3rem 0 ;
+}
+
+.projetosGrid{
+  display: grid;
+  grid-template-columns: 25% 25% 25%;
+  margin-left:15rem;
+  width: 90%;
+  gap: 7rem;
+  grid-template-rows: 10rem;
+  margin-bottom: 2rem;
+}
+
+.projetosImg {
+  width: 25rem;
+  height: 15rem;
+}
+
+.contatoContainer{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 5rem;
+}
+
+.contatosTexto{
+  display: flex;
+  margin: 1.5rem 0 1.5rem 0;
+}
+
+.imgContatos{
+  max-width: 100px;
+  max-height: 200px;
+}
+
+.contatosIcons {
+  display: flex;
+  gap: 3rem;
+}
+
+.rodape {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #212121;
+  padding: 3rem;
+}
+
+
+
+
+
+
+
+
+

@@ -130,6 +130,18 @@ body, html {
     width: 100%;
 }
 
+i#burguer{
+  background-color: #424242;
+  display: block;
+  color: white;
+  padding: 10px;
+}
+
+i#burguer:hover {
+  background-color: #212121;
+  cursor: pointer;
+}
+
 .navBar{
   cursor: pointer;
   list-style: none;
@@ -245,8 +257,8 @@ body, html {
 }
 
 .imgContatos{
-  max-width: 100px;
-  max-height: 200px;
+  max-width: 6rem;
+  max-height: 8rem;
 }
 
 .contatosIcons {
@@ -262,7 +274,12 @@ body, html {
   padding: 3rem;
 }
 
+.hidden{
+  display: none;
+}
+
 @media (max-width: 1160px) {
+
 
 .home {
   display: flex;
@@ -284,7 +301,28 @@ body, html {
 
 }
 
-@media (max-width: 620px){
+@media (max-width: 1050px){
+  .aboutContainer{
+    display: flex;
+    flex-direction: column;
+  }
+
+  .aboutImg{
+    display: none;
+  }
+}
+
+@media (max-width: 785px){
+
+  .navegacao a{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    
+  }
+
   .home {
     display: flex;
     flex-direction: column;
@@ -324,6 +362,42 @@ body, html {
     display: flex;
     margin-right: 50px;
   }
+
+  .aboutTexto{
+    width: 95%;
+  }
+
+  .about{
+    margin-bottom: none;
+  }
+
+  .skillsContainer{
+    display: flex;
+    max-width: 100%;
+    justify-content: center;
+    align-items: center;
+    gap: none;
+  }
+
+  .html, .css, .js {
+    height: 100%;
+    width: 100px;
+  }
+
+  .projetosContainer{
+    display: flex;
+    flex-direction: column;
+  }
+
+  .projetosGrid{
+    display: flex;
+    flex-direction: column;
+  }
+
+  .b {
+    display: none;
+  }
+  
   
   }
 

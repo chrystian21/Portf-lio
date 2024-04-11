@@ -58,7 +58,7 @@ body, html {
   border-right: 4px solid;
   white-space: nowrap;
   overflow: hidden;
-  width: 35ch;
+  width: 33ch;
   animation: escrevendo 2s steps(35), piscando 0.8s infinite alternate;
 }
 
